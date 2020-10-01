@@ -1,0 +1,378 @@
+/* Custom Fonts */
+@font-face {
+	font-family: ClearSans-Medium;
+	src: url(../Fonts/ClearSans-Medium.ttf);
+}
+@font-face {
+	font-family: ClearSans-Regular;
+	src: url(../Fonts/ClearSans-Regular.ttf);
+}
+@font-face {
+	font-family: ClearSans-Light;
+	src: url(../Fonts/ClearSans-Light.ttf);
+}
+
+
+
+/* Standard Styles */
+body {
+	font-family: ClearSans-Regular;
+	height: 100%;
+	margin: 0;
+	text-align: center;
+}
+
+div {
+	margin: 0 auto;
+}
+
+#divContent {
+	width: 70%;
+}
+
+h1 {
+	margin-bottom: 1%;
+}
+
+h1 a {
+	border-bottom: 3px solid black;
+	font-family: ClearSans-Light;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+a {
+	color: black;
+	display: block;
+	padding: 8px;
+	text-decoration: none;
+}
+
+.active {
+	border-bottom: 2px solid #0065be;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100%;
+}
+
+th {
+	border: 1px solid #004786;
+	font-family: ClearSans-Medium;
+	text-decoration: underline;
+	padding: 14px;
+}
+
+td {
+	border: 1px solid #004786;
+	font-size: 1.1em;
+	padding: 5px 0;
+}
+
+tr:first-child {
+	font-family: ClearSans-Medium;
+	text-decoration: underline;
+}
+
+form input[type=button]:hover, #viewMoreButton:hover {
+		background-color: #0065be;
+		color: white;
+		cursor: pointer;
+		
+		-webkit-transition: 0.3s;
+			 -o-transition: 0.3s;
+				transition: 0.3s;
+		-webkit-transition-timing-function: ease-out;
+		     -o-transition-timing-function: ease-out;
+		        transition-timing-function: ease-out;
+		-webkit-transition-duration: 0.3s;
+}
+
+#divAbout a {
+	color: #0065be;
+	margin: 0 auto;
+	text-decoration: underline;
+	width: 40%;
+}
+
+#divAbout hr {
+	color: #004786;
+	opacity: 0.4;
+	width: 20%;
+}
+
+#divForm, #divAbout {
+	clear: both;
+	width: 100%;
+}
+
+#divForm {
+	display: inline-block;
+	margin-top: 60px;
+}
+	
+#divForm h2 {
+	font-family: ClearSans-Light;
+	font-weight: lighter;
+	margin: 20px 0;
+}
+
+#divMspContent, #divJobBreakdown, #divSelectionTable, #divOccupationPayRate {
+	background-color: #0065be;
+	border: 3px solid #004786;
+	border-radius: 5px;
+	color: white;
+	height: 150px;
+	margin-bottom: 5%;
+	overflow: visible;
+	
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	   -ms-flex-align: center;
+		  align-items: center;
+	-webkit-box-pack: center;
+	   -ms-flex-pack: center;
+	 justify-content: center;
+}
+
+#divMspContent h1, #divJobBreakdown h1, #divSelectionTable h1, #divOccupationPayRate h1 {
+	margin: 0;
+}
+
+#divMspDetails dd {
+	margin: 0;
+}
+
+#viewMoreButton {
+	background-color: white;
+	border: 1px solid #0065be;
+	color: #0065be;
+	font-size: 1.5em;
+	margin-bottom: 50px;
+	padding: 20px 40px;
+}
+
+#divSelectionTable input[type=text] {
+	border: 8px solid #004786;
+	box-sizing: border-box;
+	font-family: ClearSans-Light;
+	font-size: 1.4em;
+	padding: 8px;
+	width: 100%;
+}
+
+#tableOccupations {
+	background-color: #004786;
+}
+
+#tableOccupations tr {
+	background-color: #0065be;
+	font-family: ClearSans-Regular;
+}
+
+#divSelectionTable a {
+	border: 1px solid white;
+	color: white;
+	cursor: pointer;
+	padding: 16px;
+}
+
+#divSelectionTable td:hover a {
+	background-color: white;
+	color: #004786;
+	text-decoration: underline;
+	
+	-webkit-transition: 0.2s;
+		 -o-transition: 0.2s;
+			transition: 0.2s;
+	-webkit-transition-timing-function: ease-in;
+		 -o-transition-timing-function: ease-in;
+			transition-timing-function: ease-in;
+		-webkit-transition-duration: 0.2s;
+}
+
+#divSelectionTable, #divOccupationPayRate {
+		display: block;
+		height: 100%;
+		overflow: hidden;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+	#btnMobileNav {
+		background: none;
+		border: none;
+		cursor: pointer;
+		display: initial;
+		float: left;
+		font-size: 3em;
+	}
+	
+	#divContent {
+		min-width: 326px;
+	}
+	
+	#divMspContent {
+		display: block;
+		height: 100%;
+	}
+	
+	#divMspContent img {
+		height: auto;
+		max-height: 500px;
+		width: 100%;
+	}
+	
+	#frmForm {
+		margin-bottom: 80px;
+	}
+	
+	nav {
+		display: none;
+	}
+	
+	ul, ul li {
+		clear: both;
+		display: block;
+		float: none;
+	}
+	
+	li {
+		background: #004786;
+		font-size: 1.5em;
+		margin: 5px 0;
+		padding: 10px;
+	}
+	
+	li a {
+		color: white;
+	}
+	
+	.active {
+		border-bottom: none;
+	}
+	
+	form input {
+		display: inline-block;
+		font-size: 2em;
+		padding: 20px 40px;
+		width: 100%;
+	}
+	
+	form input[type=button] {
+		background-color: white;
+		border: 1px solid #0065be;
+		color: #0065be;
+	}
+	
+	form input[type=text] {
+		-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) {
+	#btnMobileNav {
+		display: none;
+	}
+	
+	#divForm {
+		margin: 80px 0;
+	}
+	
+	#divForm h2 {
+		font-size: 18px;
+	}
+	
+	#divHeaderContent {
+		overflow: auto;
+	}
+	
+	#divMspContent {
+		height: 100%;
+		align-items: center;
+	}
+	
+	#divMspContent img {
+		height: auto;
+		min-height: 220px;
+		width: 50%;
+	}
+	
+	#divMspDetails {
+		display: inline-block;
+		font-size: 1em;
+		width: 50%;
+	}
+	
+	#divSelectionTable, #divOccupationPayRate {
+		overflow: visible;
+	}
+	
+	#frmForm {
+		margin: 0;
+	}
+	
+	nav {
+		display: initial;
+	}
+	
+	li a:hover {
+		background-color: #0065be;
+		border-radius: 6px;
+		color: white;
+		
+		-webkit-transition: 0.2s;
+			 -o-transition: 0.2s;
+				transition: 0.2s;
+		-webkit-transition-timing-function: linear;
+			 -o-transition-timing-function: linear;
+				transition-timing-function: linear;
+		-webkit-transition-duration: 0.2s;
+	}
+	
+	form input{
+		font-size: 1.2em;
+		margin: -3px;
+		padding: 10px 20px;
+	}
+	
+	form input[type=button] {
+		background-color: white;
+		border: 1px solid #0065be;
+		color: #0065be;
+	}
+}
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#divMspDetails {
+		font-size: 1.2em;
+	}
+}

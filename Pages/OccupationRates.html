@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Jobs Scotland - Occupation Pay Rates</title>
+<link href="../CSS/Stylesheet.css" rel="stylesheet" type="text/css">
+<script src="../JS/lib/jquery.js"></script>
+</head>
+<body>
+
+<div id="divContent">
+
+	<div id="divHeaderContent">
+		<header><h1><a href="index.html">JOBS SCOTLAND</a></h1></header>
+
+		<input type="button" id="btnMobileNav" value="☰"></input>
+		<nav>
+			<ul>
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="GeographicalData.html">Geographical Data</a></li>
+				<li><a href="OccupationRates.html"  class="active">Occupation Pay Rates</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="divForm">
+		<h2>Enter an Occupation to find out weekly pay rates across the UK</h2>
+		<form id="frmForm">
+			<input type="text" id="occupation" placeholder="Occupation"></input>
+			<input type="button" id="btn" value="Enter Occupation"></input>
+		</form>
+	</div>
+
+	<div id="divSelectionTable" style="display: none"></div>
+
+	<div id="divOccupationPayRate">
+		<h1>Estimated Rate of Pay</h1>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="../JS/occupationRateScripts.js"></script>
+<script type="text/javascript" src="../JS/lib/canvasjs.min.js"></script>
+<script type="text/javascript" src="../JS/responsiveNavBar.js"></script>
+</body>
+</html>

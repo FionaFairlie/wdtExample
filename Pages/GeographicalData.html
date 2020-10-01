@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Jobs Scotland - Geographical Data</title>
+<link href="../CSS/Stylesheet.css" rel="stylesheet" type="text/css">
+<script src="../JS/lib/jquery.js"></script>
+</head>
+<body>
+
+<div id="divContent">
+
+	<div id="divHeaderContent">
+		<header><h1><a href="index.html">JOBS SCOTLAND</a></h1></header>
+
+		<input type="button" id="btnMobileNav" value="☰"input>
+		<nav>
+			<ul>
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="GeographicalData.html" class="active">Geographical Data</a></li>
+				<li><a href="OccupationRates.html">Occupation Pay Rates</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="divForm">
+		<h2>Enter a UK postcode to find the MSP and Job Distribution in that area</h2>
+		<form id="frmForm">
+			<input type="text" id="postcode" placeholder="Postcode"></input>
+			<input type="button" id="btn" value="Seach Postcode"></input>
+		</form>
+	</div>
+
+	<div id="divMspContent">
+		<h1>MSP Details</h1>
+	</div>
+
+	<div id="divJobBreakdown">
+		<h1>Job Breakdown</h1>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="../JS/geoDataScripts.js"></script>
+<script type="text/javascript" src="../JS/lib/canvasjs.min.js"></script>
+<script type="text/javascript" src="../JS/responsiveNavBar.js"></script>
+</body>
+</html>
